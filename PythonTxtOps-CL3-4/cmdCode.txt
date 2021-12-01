@@ -1,0 +1,158 @@
+Microsoft Windows [Version 10.0.19043.1348]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\notan>python
+Python 3.9.9 (tags/v3.9.9:ccb0e6a, Nov 15 2021, 18:08:50) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+
+C:\Users\notan>d:
+
+D:\>md PythonTxtOps
+
+D:\>cd PythonTxtOps
+
+D:\PythonTxtOps>python
+Python 3.9.9 (tags/v3.9.9:ccb0e6a, Nov 15 2021, 18:08:50) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os
+>>> os.system("date")
+The current date is: 19-11-2021
+Enter the new date: (dd-mm-yy) 19-11-2021
+A required privilege is not held by the client.
+1
+>>> os.system("time")
+The current time is: 20:07:48.27
+Enter the new time: 20:07:48.27
+A required privilege is not held by the client.
+1
+>>> exit()
+
+D:\PythonTxtOps>..
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\PythonTxtOps>cd..
+
+D:\>python
+Python 3.9.9 (tags/v3.9.9:ccb0e6a, Nov 15 2021, 18:08:50) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os
+>>> os.getcwd()
+'D:\\'
+>>> os.getcwd()
+'D:\\'
+>>> os.mkdir("D://PythonTxtOps/test1")
+>>> path = "D://PythonTxtOps/test1"
+>>> isexist = os.path.exists(path)
+>>> print(isexist)
+True
+>>> print(path)
+D://PythonTxtOps/test1
+>>> exit()
+
+D:\>cd PythonTxtOps/test1
+
+D:\PythonTxtOps\test1>notepad text1.txt
+
+D:\PythonTxtOps\test1>python
+Python 3.9.9 (tags/v3.9.9:ccb0e6a, Nov 15 2021, 18:08:50) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+
+D:\PythonTxtOps\test1>cd..
+
+D:\PythonTxtOps>cd..
+
+D:\>cd PythonTxtOps/test1
+
+D:\PythonTxtOps\test1>cd....
+
+D:\PythonTxtOps\test1>cd..
+
+D:\PythonTxtOps>cd..
+
+D:\>python
+Python 3.9.9 (tags/v3.9.9:ccb0e6a, Nov 15 2021, 18:08:50) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> path = "D://PythonTxtOps/test1/text1.txt"
+>>> rout_ext = os.pat.splitext(path)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'os' is not defined
+>>> import os
+>>> rout_ext = os.path.splitext(path)
+>>> print("route-part", rout_ext[0])
+route-part D://PythonTxtOps/test1/text1
+>>> print("extension-part", rout_ext[1])
+extension-part .txt
+>>> os.listdir()
+['!qhlogs.doc', '$AV_ASW', '$RECYCLE.BIN', 'BABO EDU', 'BitTorrent.exe', 'BitTorrent.lnk', 'c62_Pro', 'Camera Roll', 'cfrbackup-GGBWKFNQ', 'data.dat', 'DESKTOP', 'DOCUMENTS', 'Downloads', 'DumpStack.log', 'DumpStack.log.tmp', 'EasyAntiCheat', 'EasyAntiCheat_EOS', "FATIMA MA'AM FAREWELL THANKSGIVING BY 8C.mp4", 'Foxit Software', 'GitHub Desktop.lnk', 'KeyShot 10.lnk', 'MAGIX PC Check & Tuning 2021.lnk', 'Marvel', 'Marvel Wallpaper Album', 'MEMORY.DMP', 'Microsoft Teams.lnk', 'Microsoft Visual Studio', 'Microsoft Visual Studio Cache', 'Microsoft VS Code', 'Music Maker (64-Bit).lnk', 'MyFirstGame', 'pagefile.sys', 'Pictures', 'Program Files', 'Projects', 'PythonTxtOps', 'Quick Heal', 'quirk', 'ReactApps', 'Recovery', 'S-1-5-21-727013006-2903626054-2744035227-1002', 'Saved Pictures', 'Screenshots', 'Setup.exe', 'soft', 'System Volume Information', 'Temp', 'TexturePackerGUI.lnk', 'TheSndBox', 'TLauncher.lnk', 'Unity Hub', 'Video Projects', 'Videos', 'Visual Studio Code.lnk', 'WcciCloudFile', 'WindowsApps', 'Wondershare', 'WpSystem', 'WUDownloadCache', 'Zoom.lnk']
+>>> import shutil
+>>> exit()
+
+D:\>cd PythonTxtOps/test1/text1.txt
+The directory name is invalid.
+
+D:\>cd D://PythonTxtOps/test1/text1.txt
+The directory name is invalid.
+
+D:\>cd PythonTxtOps/test1/text1.txt
+The directory name is invalid.
+
+D:\>cd PythonTxtOps/test1/text1
+The system cannot find the path specified.
+
+D:\>cd PythonTxtOps/test1/
+
+D:\PythonTxtOps\test1>notepad shutil1.txt shutil2.txt
+
+D:\PythonTxtOps\test1>notepad shutil1.txt
+
+D:\PythonTxtOps\test1>notepad shutil2.txt
+
+D:\PythonTxtOps\test1>cd..
+
+D:\PythonTxtOps>cd..
+
+D:\>python
+Python 3.9.9 (tags/v3.9.9:ccb0e6a, Nov 15 2021, 18:08:50) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> source = "D:/PythonTxtOps/test1/shutil1.txt"
+>>> print(source)
+D:/PythonTxtOps/test1/shutil1.txt
+>>> import os
+>>> import shutil
+>>> path = "D:/PythonTxtOps/test1"
+>>> print(os.listdir(path))
+['shutil1.txt', 'shutil2.txt', 'text1.txt']
+>>> destination = "D:/PythonTxtOps/test1/shutil2.txt"
+>>> dest = shutil.copy(source, destination)
+>>> dest = shutil.copy(destination, source)
+>>> dest2 = shutil.copy(destination, source)
+>>> source = "D:/PythonTxtOps/test1/shutil2.txt"
+>>> destination = "D:/PythonTxtOps/test1/shutil1.txt"
+>>> dest = shutil.copy(source, destination)
+>>> dest1 = shutil.copy(source, destination)
+>>> source1 = "D:/PythonTxtOps/test1/shutil2.txt"
+>>> destination1 = "D:/PythonTxtOps/test1/shutil1.txt"
+>>> dest1 = shutil.copy(source, destination)
+>>> source1 = "D:/PythonTxtOps/test1/shutil2.txt"
+>>> destination1 = "D:/PythonTxtOps/test1/shutil1.txt"
+>>> dest1 = shutil.copy(source, destination)
+>>> source1 = "D:/PythonTxtOps/test1/shutil2.txt"
+>>> source1 = "D:/PythonTxtOps/test1/shutil1.txt"
+>>> destination1 = "D:/PythonTxtOps/test1/shutil2.txt"
+>>> dest1 = shutil.copy(source, destination)
+>>> sourceMove = "D:/PythonTxtOps/test1/shutil2.txt"
+>>> sourceMove = "D:/PythonTxtOps/test1"
+>>> exit()
+
+D:\>python
+Python 3.9.9 (tags/v3.9.9:ccb0e6a, Nov 15 2021, 18:08:50) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os
+>>> import shutil
+>>> source = "D:/PythonTxtOps/images"
+>>> destination = "D:/PythonTxtOps/videos"
+>>> moveit = shutil.move(source, destination)
